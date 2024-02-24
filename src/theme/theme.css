@@ -1,0 +1,124 @@
+/*
+  The theming variables / design tokens are
+  based on the System UI Theme Specification (https://github.com/system-ui/theme-specification)
+*/
+
+:root {
+    --color-blue: #1c4396;
+    --color-green: #00ac6a;
+    --color-orange: #f78401;
+    --color-blue-lighten: #ebf5fe;
+    --color-gray: #333;
+    --color-silver: #eee;
+    --color-black: #222;
+    --color-white: #fff;
+    --color-snow: #fafafa;
+
+    --radii-sm: 2px;
+    --radii-md: 4px;
+    --radii-lg: 8px;
+    --radii-xl: 12px;
+    --radii-xxl: 16px;
+    --radii-full: 999px;
+    --radii-half: 50%;
+
+    --space-none: 0;
+    --space-0: 2px;
+    --space-1: 4px;
+    --space-2: 6px;
+    --space-3: 8px;
+    --space-4: 12px;
+    --space-5: 16px;
+    --space-6: 20px;
+    --space-7: 24px;
+    --space-8: 32px;
+
+    --font-size-0: 10px;
+    --font-size-1: 12px;
+    --font-size-2: 14px;
+    --font-size-3: 16px;
+    --font-size-4: 20px;
+    --font-size-5: 24px;
+    --font-size-6: 32px;
+
+    --font-size-h6: var(--font-size-0);
+    --font-size-h5: var(--font-size-1);
+    --font-size-body: var(--font-size-2);
+    --font-size-h4: var(--font-size-3);
+    --font-size-h3: var(--font-size-4);
+    --font-size-h2: var(--font-size-5);
+    --font-size-h1: var(--font-size-6);
+
+    --font-weight-regular: 300;
+    --font-weight-bold: 700;
+    --font-family-default: 'Nunito Sans', -apple-system, blinkmacsystemfont,
+    'Segoe UI', roboto, oxygen-sans, ubuntu, cantarell, 'Helvetica Neue',
+    sans-serif;
+
+    --line-height-body: 19px;
+    --line-height-h6: 14px;
+    --line-height-h5: 17px;
+    --line-height-h4: 24px;
+    --line-height-h3: 28px;
+    --line-height-h2: 34px;
+    --line-height-h1: 44px;
+}
+
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: var(--color-gray);
+    font-family: var(--font-family-default);
+    font-size: 100%;
+    font-weight: var(--font-weight-regular);
+}
+
+body {
+    background-color: var(--color-blue-lighten);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-body);
+    min-height: 100vh;
+    min-width: 760px;
+}
+
+button {
+    background-color: var(--color-blue);
+    border: 1px solid transparent;
+    border-radius: var(--radii-sm);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-regular);
+    line-height: 1;
+    min-width: 98px;
+    padding: 0 var(--space-4);
+    text-decoration: none;
+    transition: color 100ms ease-in-out, background 200ms ease-in-out,
+    box-shadow 100ms ease-in-out, border 200ms ease-in-out;
+    color: var(--color-snow);
+}
+
+p {
+    margin: 0;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.InlineFlexCenteredSpaceBetween {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+}
