@@ -28,9 +28,9 @@
     align-self: flex-end;
     justify-content: center;
     background-color: var(--color-blue);
+    border-radius: var(--radii-full);
 }
 
 .ButtonText {
     font-size: var(--font-size-1);
-    font-weight: var(--font-weight-bold);
 }

@@ -49,7 +49,7 @@
     --font-size-h2: var(--font-size-5);
     --font-size-h1: var(--font-size-6);
 
-    --font-weight-regular: 300;
+    --font-weight-regular: 400;
     --font-weight-bold: 700;
     --font-family-default: 'Nunito Sans', -apple-system, blinkmacsystemfont,
     'Segoe UI', roboto, oxygen-sans, ubuntu, cantarell, 'Helvetica Neue',
@@ -87,7 +87,7 @@ body {
 }
 
 button {
-    background-color: var(--color-blue);
+    background-color: transparent;
     border: 1px solid transparent;
     border-radius: var(--radii-sm);
     cursor: pointer;
